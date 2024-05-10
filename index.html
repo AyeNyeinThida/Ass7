@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin:100px;
+        }
+        button{
+            width: 60px;
+            height: 50px;
+            background-color: rgb(233, 18, 107);
+            border:1px solid rgb(233, 18, 107);
+            border-radius: 5px;
+            font-size: 20px;
+            color:#fff;
+            
+            transition-duration: 2s;
+            animation-name: aa;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes aa{
+            0%{
+                transform: translate(0px);
+            }
+            20%{
+                transform: translate(100px);
+            }
+            40%{
+                transform: translate(200px) rotate(45deg);
+            }
+            60%{
+                transform:translate(200px);
+            }
+            80%{
+                transform: translate(100px) rotate(45deg);
+            }
+            100%{
+                transform: rotate(50deg);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <button>Card</button>
+    </div>
+</body>
+</html>
